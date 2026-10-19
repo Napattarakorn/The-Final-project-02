@@ -1,0 +1,12 @@
+{
+  "name": "schedule",
+  "private": true,
+  "scripts": {
+    "db:create": "wrangler d1 create schedule-db",
+    "db:init": "wrangler d1 execute schedule-db --remote --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute schedule-db --local --file=./schema.sql",
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy"
+  },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}

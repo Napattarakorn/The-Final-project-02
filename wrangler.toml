@@ -1,0 +1,9 @@
+# ตารางงานรายเดือน — Cloudflare Pages + D1
+name = "schedule"                       # ชื่อโปรเจกต์บน Cloudflare Pages (เปลี่ยนได้)
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"                          # ห้ามเปลี่ยนชื่อนี้ (โค้ดอ้างถึง env.DB)
+database_name = "schedule-db"
+database_id = "41772d53-1252-4824-857b-9a40f89990fc"
